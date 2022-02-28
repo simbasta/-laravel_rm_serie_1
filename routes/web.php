@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/walid', function () {
-    $saluer = '<h1>bienvenue</h1>';
+    $saluer = '<h2>bienvenue</h2>';
     return $saluer;
+});
+
+Route::get("/{chiffre}", function ($chiffre) {
+    return view("welcome", compact("chiffre"));
 });
