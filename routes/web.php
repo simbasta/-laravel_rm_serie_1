@@ -13,7 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/walid', function () {
-    $saluer = 'salut';
+    $saluer = '<h1>bienvenue</h1>';
     return $saluer;
 });
