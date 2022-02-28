@@ -26,3 +26,11 @@ Route::get('/walid', function () {
 Route::get("/{chiffre}", function ($chiffre) {
     return view("welcome", compact("chiffre"));
 });
+
+
+Route::get("/{a}/{b}", function ($a,$b){
+    return view("contact", compact("a","b"));
+}
+
+
+);
