@@ -23,14 +23,19 @@ Route::get('/walid', function () {
     return $saluer;
 });
 
-Route::get("/{chiffre}", function ($chiffre) {
-    return view("welcome", compact("chiffre"));
+// // Route::get("/{chiffre}", function ($chiffre) {
+// //     return view("welcome", compact("chiffre"));
+// // });
+
+
+// // Route::get("/{a}/{b}", function ($a,$b){
+// //     return view("contact", compact("a","b"));
+// // }
+
+
+// );
+
+route::get('/couleur/{z}',function($c){
+    return view('couleur',compact('c'));
+
 });
-
-
-Route::get("/{a}/{b}", function ($a,$b){
-    return view("contact", compact("a","b"));
-}
-
-
-);
